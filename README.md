@@ -121,7 +121,7 @@ This section should list any major frameworks/libraries used to bootstrap your p
 Intel OneAPI is a comprehensive development platform for building high-performance, cross-architecture applications. It provides a unified programming model, tools, and libraries that allow developers to optimize their applications for Intel CPUs, GPUs, FPGAs, and other hardware. Intel OneAPI includes support for popular programming languages like C++, Python, and Fortran, as well as frameworks for deep learning, high-performance computing, and data analytics. With Intel OneAPI, developers can build applications that can run on a variety of hardware platforms, from edge devices to data centers, and take advantage of the performance benefits of Intel architectures.
 
 ### Use of oneDAL and TensorFlow in our project
-<img src="static/images/ss2.png" alt="png">
+<img src="static/images/ss2.jpg" alt="png">
 
 In our project, we harness the capabilities of both oneDAL (oneAPI Data Analytics Library) and the oneAPI AI Analytics Toolkit, which includes TensorFlow, to enhance the accuracy and efficiency of converting handwritten prescriptions into a digital format. Here's how we utilize these tools:
 
