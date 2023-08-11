@@ -56,7 +56,6 @@ The "MediScan" project aims to transform healthcare by accurately converting han
 ## About The TEAM
 <div align="center">
   <img align="right" src="https://github.com/rajput2107/rajput2107/blob/master/Assets/Developer.gif" width='200'/>
-  <h2>Health Heroes</h2>
 </div>
 This is  Team Health Heros, and we are pleased to introduce our project on Medical Prescription Handwritten Text Recognition utilizing cutting-edge technologies such as Artificial Intelligence (AI), Machine Learning (ML), and Deep Learning (DL), on Intel one API server using Intel oneDAL and Intel extension for Tensorflow.👨‍💻. 
 
