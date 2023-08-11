@@ -115,28 +115,74 @@ This section should list any major frameworks/libraries used to bootstrap your p
 * [![python][python]][python-url]
 * [![jupyter][jupyter]][jupyter-url]
 * [![tensorflow][tensorflow]][tensorflow-url]
-* 
+  
 
 <!-- Intel one api -->
 ## Intel oneAPI <img src="static/images/oneapi2.png" alt="png" width="30">
 Intel OneAPI is a comprehensive development platform for building high-performance, cross-architecture applications. It provides a unified programming model, tools, and libraries that allow developers to optimize their applications for Intel CPUs, GPUs, FPGAs, and other hardware. Intel OneAPI includes support for popular programming languages like C++, Python, and Fortran, as well as frameworks for deep learning, high-performance computing, and data analytics. With Intel OneAPI, developers can build applications that can run on a variety of hardware platforms, from edge devices to data centers, and take advantage of the performance benefits of Intel architectures.
 
 ### Use of oneDNN and TensorFlow in our project
-<img src="images/onednn.png" alt="png" width="700">
-OneDNN provides highly optimized routines for various deep learning operations, including convolution, pooling, normalization, and activation functions. By using oneDNN, you can expect faster execution times and better performance on modern CPUs, especially those with Intel processors.
 
-In this project <code>os.environ['TF_ENABLE_ONEDNN_OPTS'] = '1'</code> line sets an environment variable called <code>TF_ENABLE_ONEDNN_OPTS to '1'</code>. This enables the use of Intel's OneAPI Deep Neural Network Library (OneDNN) optimizations for TensorFlow on the system where this code is being run. OneDNN is a high-performance library for deep learning that is designed to optimize the performance of deep neural network computations on a variety of hardware platforms. By enabling OneDNN optimizations, this code may run faster on certain hardware architectures that are compatible with OneDNN. <strong>In this project, the Conv2D and Dense layers will be automatically optimized using oneDNN, which should result in faster training and inference times on compatible hardware.</strong>
+In our project, we leverage the power of both oneDNN (oneAPI Deep Neural Network Library) and TensorFlow to enhance the accuracy and efficiency of handwritten prescription digitization:
 
-The <code>tensorflow.keras</code> module is used to create a convolutional neural network (CNN) model for image classification. The model architecture consists of three convolutional blocks, each followed by a max pooling layer, and three fully connected layers with dropout for regularization.
+#oneDNN (oneAPI Deep Neural Network Library):
 
-Finally, the <code>model.compile</code> method is called to configure the optimizer, loss function, and evaluation metric for the model. The optimizer used is Adam, and the loss function used is sparse categorical cross-entropy. The model is also evaluated using the accuracy metric.
+We integrate oneDNN into our project to optimize the performance of our machine learning models. By utilizing oneDNN's deep learning primitives and optimization capabilities, we ensure that our models efficiently process the complex neural network computations involved in optical character recognition (OCR) and prescription transcription. This optimization contributes to faster inference times and improved resource utilization, making our solution more responsive and scalable.
 
-<!-- What it does -->
-## What it does <img src="images/does.png" alt="png" width="30">
-The garbage segregation project using AI/ML automates the process of identifying and sorting different types of waste. The system uses image recognition techniques to analyze images captured by a camera and machine learning algorithms to classify the waste into different categories. By accurately identifying and segregating waste, the system can reduce the workload on human workers, increase efficiency, and reduce environmental pollution. The project also promotes responsible waste disposal practices by making people more aware of the types of waste they generate and the proper ways to dispose of them.
+#TensorFlow:
+
+TensorFlow serves as a cornerstone of our project, providing a robust and versatile framework for building and training our machine learning models. We employ TensorFlow's high-level APIs to construct and fine-tune our OCR and transcription models, allowing us to handle various data preprocessing steps, model architectures, and training strategies. TensorFlow's extensive ecosystem also aids in experimentation, visualization, and model deployment, enabling us to iterate and improve our prescription digitization system effectively.
+By combining the capabilities of oneDNN and TensorFlow, we ensure that our project achieves optimal performance and accuracy in converting handwritten prescriptions into a digital format. These technologies synergistically enhance our solution's ability to provide accurate and reliable medication information, minimizing errors, and improving patient safety in healthcare settings.
+
+
+## How we built it <img src="images/built.png" alt="png" width="30">
+These are the steps involved in making this project: 
+* Importing Libraries
+* Data Importing
+* Data Exploration
+* Data Configuration
+* Preparing the Data
+  * Creating a Generator for Training Set
+  * Creating a Generator for Testing Set
+* Writing the labels into a text file 'Labels.txt'
+* Model Creation
+* Model Compilation
+* Training the Model 
+* Testing Predictions
+* Saving model as 'model.pkl'
+* Deploying the Model as a Web Application
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+
+## What we learned <img src="images/learn.png" alt="png" width="30">
+Throughout the course of the project, we gained valuable insights and knowledge that have not only advanced our technical skills but also enriched our understanding of healthcare, technology, and collaboration. Here's what we learned:
+
+1. Healthcare Domain Expertise: We deepened our understanding of the challenges and complexities within the healthcare sector, particularly the significance of accurate medication management and patient safety.
+
+2. Optical Character Recognition (OCR) Techniques: We became proficient in various OCR techniques, learning how to preprocess and extract textual information from handwritten prescriptions effectively.
+
+3. Machine Learning and Deep Learning: Our project honed our skills in building and training machine learning models, especially neural networks, to accurately transcribe handwritten text into digital formats.
+
+4. Data Preprocessing: We learned the critical role of data preprocessing in enhancing model performance, including techniques such as normalization, noise reduction, and image augmentation.
+
+5. Model Optimization: We explored strategies for optimizing model performance and efficiency, including leveraging libraries like oneDNN to accelerate neural network computations.
+
+6. GitHub Collaboration: Our project's collaborative nature taught us how to effectively collaborate with team members, manage version control, address issues, and merge contributions using GitHub.
+
+7. Open-Source Contributions: Through community-driven contributions and discussions, we gained experience in open-source development, understanding how a collaborative environment fosters innovation.
+
+8. **Patient-Centric Design:** We grasped the importance of designing technology solutions with patients' safety and well-being at the forefront, aligning technology goals with healthcare objectives.
+
+9. Communication and Documentation: Our project emphasized clear communication and thorough documentation, showcasing the significance of conveying ideas, progress, and instructions effectively.
+
+10. Interdisciplinary Learning: We recognized the value of interdisciplinary collaboration, where expertise in healthcare, technology, and various domains converges to create impactful solutions.
+
+11. Ethical Considerations: We delved into the ethical implications of our project, considering issues like data privacy, consent, and the responsible use of technology in healthcare.
+
+12. Continuous Improvement: Iterative development taught us the value of continuous improvement, actively incorporating feedback and refining our approach to create a more effective solution.
+
+In summary, our project has been a profound learning experience that enriched our technical, collaborative, and ethical understanding, equipping us with skills that transcend the boundaries of healthcare and technology and empowering us to make a positive impact on patient care and safety.
 
 
 [python]: https://img.shields.io/badge/Python-3470a3?&logoColor=white
