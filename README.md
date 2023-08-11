@@ -1,8 +1,19 @@
-<a name="readme-top"></a>
-  [![Contributors][contributors-shield]][contributors-url]
-  [![Forks][forks-shield]][forks-url]
-  [![Stargazers][stars-shield]][stars-url]
-  [![Issues][issues-shield]][issues-url]
+<br />
+<div align="center">
+  <a href="https://github.com/SDeBAS/MediScan.git">
+    <img src="static/images/logo.png" alt="Logo" width="80" height="80">
+  </a>
+
+  <h3 align="center">Transforming Healthcare Digitally</h3>
+
+  <p align="center">
+    Welcome to our project!
+    <br />
+    <a href="https://github.com/SDeBAS/MediScan.git"><strong>Explore the documentation »</strong></a>
+    | 
+    <a href="https://raison024-smart-garbage-segregation-deploymentapp-lfq9yb.streamlit.app/">View Demo</a>
+  </p>
+</div>
 
 <h2> Hello There <img src="https://raw.githubusercontent.com/ABSphreak/ABSphreak/master/gifs/Hi.gif" height="25px"></h2>
 
