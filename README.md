@@ -106,7 +106,7 @@ The "MediScan" project holds several significant social impacts:
 10. Patient Empowerment: Empowers patients with clear and legible prescriptions, enabling them to understand and follow their treatment plans accurately.
 
 
-### Built With <img src="images/built.png" alt="png" width="30">
+### Built With <img src="static/images/built.png" alt="png" width="30">
 
 This section should list any major frameworks/libraries used to bootstrap your project. Here are a few examples.
 
@@ -115,13 +115,10 @@ This section should list any major frameworks/libraries used to bootstrap your p
 * [![python][python]][python-url]
 * [![jupyter][jupyter]][jupyter-url]
 * [![tensorflow][tensorflow]][tensorflow-url]
-* [![streamlit][streamlit]][streamlit-url]
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
+* 
 
 <!-- Intel one api -->
-## Intel oneAPI <img src="images/oneapi2.png" alt="png" width="30">
+## Intel oneAPI <img src="static/images/oneapi2.png" alt="png" width="30">
 Intel OneAPI is a comprehensive development platform for building high-performance, cross-architecture applications. It provides a unified programming model, tools, and libraries that allow developers to optimize their applications for Intel CPUs, GPUs, FPGAs, and other hardware. Intel OneAPI includes support for popular programming languages like C++, Python, and Fortran, as well as frameworks for deep learning, high-performance computing, and data analytics. With Intel OneAPI, developers can build applications that can run on a variety of hardware platforms, from edge devices to data centers, and take advantage of the performance benefits of Intel architectures.
 
 ### Use of oneDNN and TensorFlow in our project
@@ -140,4 +137,18 @@ The garbage segregation project using AI/ML automates the process of identifying
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+
+
+[python]: https://img.shields.io/badge/Python-3470a3?&logoColor=white
+[python-url]: https://www.python.org/
+[jupyter]: https://img.shields.io/badge/Jupyter%20Notebook-da5b0b?&logoColor=white
+[jupyter-url]: https://jupyter.org/
+[tensorflow]: https://img.shields.io/badge/TensorFlow-f0b93a?&logoColor=white
+[tensorflow-url]: https://www.tensorflow.org/
+[streamlit]: https://img.shields.io/badge/Streamlit-f24747?&logoColor=white
+[streamlit-url]: https://streamlit.io/
+[oneapi]: https://img.shields.io/badge/Intel%20oneAPI-20232A?&logoColor=61DAFB
+[oneapi-url]: https://www.intel.com/content/www/us/en/docs/oneapi/programming-guide/2023-0/intel-oneapi-data-analytics-library-onedal.html
+[onednn]: https://img.shields.io/badge/oneDNN-20232A?&logoColor=61DAFB
+[onednn-url]: https://www.intel.com/content/www/us/en/developer/tools/oneapi/onednn.html
 
