@@ -1,7 +1,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/SDeBAS/MediScan.git">
-    <img src="static/images/logo.png" alt="Logo" width="80" height="80">
+    <img src="static/images/logo.png" alt="Logo">
   </a>
 
   <h3 align="center">Transforming Healthcare Digitally</h3>
@@ -9,8 +9,8 @@
   <p align="center">
     Welcome to our project!
     <br />
-    <a href="https://github.com/SDeBAS/MediScan.git"><strong>Explore the documentation »</strong></a>
-    | 
+    <a href="https://github.com/SDeBAS/MediScan.git"><strong>Explore the documentation</strong></a>
+    <br/>
     <a href="https://raison024-smart-garbage-segregation-deploymentapp-lfq9yb.streamlit.app/">View Demo</a>
   </p>
 </div>
