@@ -32,7 +32,7 @@
     <li>
       <a href="#intel-oneapi">Intel OneAPI</a>
       <ul>
-        <li><a href="#use-of-onednn-in-our-project">Use of oneDNN and TensorFlow in our project</a></li>
+        <li><a href="#use-of-onednn-in-our-project">Use of oneDAL and TensorFlow in our project</a></li>
       </ul>
     </li>
     <li><a href="#what-it-does">How we built it</a></li>
@@ -114,24 +114,35 @@ This section should list any major frameworks/libraries used to bootstrap your p
 * [![python][python]][python-url]
 * [![jupyter][jupyter]][jupyter-url]
 * [![tensorflow][tensorflow]][tensorflow-url]
+* [![oneAPI AI Analytical Toolkit][aitoolkit]][aitoolkit-url]
   
 
 <!-- Intel one api -->
 ## Intel oneAPI <img src="static/images/oneapi2.png" alt="png" width="30">
 Intel OneAPI is a comprehensive development platform for building high-performance, cross-architecture applications. It provides a unified programming model, tools, and libraries that allow developers to optimize their applications for Intel CPUs, GPUs, FPGAs, and other hardware. Intel OneAPI includes support for popular programming languages like C++, Python, and Fortran, as well as frameworks for deep learning, high-performance computing, and data analytics. With Intel OneAPI, developers can build applications that can run on a variety of hardware platforms, from edge devices to data centers, and take advantage of the performance benefits of Intel architectures.
 
-### Use of oneDNN and TensorFlow in our project
-
-In our project, we leverage the power of both oneDNN (oneAPI Deep Neural Network Library) and TensorFlow to enhance the accuracy and efficiency of handwritten prescription digitization:
-
-#oneDNN (oneAPI Deep Neural Network Library):
-
-We integrate oneDNN into our project to optimize the performance of our machine learning models. By utilizing oneDNN's deep learning primitives and optimization capabilities, we ensure that our models efficiently process the complex neural network computations involved in optical character recognition (OCR) and prescription transcription. This optimization contributes to faster inference times and improved resource utilization, making our solution more responsive and scalable.
-
-#TensorFlow:
+### Use of oneDAL and TensorFlow in our project
 <img src="static/images/ss2.png" alt="png">
+
+In our project, we harness the capabilities of both oneDAL (oneAPI Data Analytics Library) and the oneAPI AI Analytics Toolkit, which includes TensorFlow, to enhance the accuracy and efficiency of converting handwritten prescriptions into a digital format. Here's how we utilize these tools:
+
+oneDAL (oneAPI Data Analytics Library):
+* Data Preprocessing: We use oneDAL to efficiently preprocess the input handwritten prescription images. This includes tasks like resizing images, normalization, and noise reduction, all of which are critical for improving the quality of input data before feeding it into our machine-learning models.
+
+* Feature Engineering: oneDAL provides optimized algorithms for feature engineering, which we use to extract relevant features from the prescription images. This process aids our machine learning models in understanding and differentiating various characters and symbols within the prescriptions.
+
+* oneAPI AI Analytics Toolkit (TensorFlow):
+
 TensorFlow serves as a cornerstone of our project, providing a robust and versatile framework for building and training our machine learning models. We employ TensorFlow's high-level APIs to construct and fine-tune our OCR and transcription models, allowing us to handle various data preprocessing steps, model architectures, and training strategies. TensorFlow's extensive ecosystem also aids in experimentation, visualization, and model deployment, enabling us to iterate and improve our prescription digitization system effectively.
-By combining the capabilities of oneDNN and TensorFlow, we ensure that our project achieves optimal performance and accuracy in converting handwritten prescriptions into a digital format. These technologies synergistically enhance our solution's ability to provide accurate and reliable medication information, minimizing errors, and improving patient safety in healthcare settings.
+
+* Model Development: TensorFlow, included in the oneAPI AI Analytics Toolkit, forms the backbone of our machine learning model development. We utilize TensorFlow's high-level APIs to design, train, and fine-tune neural networks for optical character recognition (OCR) and transcription tasks.
+
+* Model Optimization: TensorFlow's integration with oneDNN (oneAPI Deep Neural Network Library) enables us to optimize the performance of our neural network computations. We leverage oneDNN's deep learning primitives and optimization capabilities to accelerate the execution of complex neural network operations, resulting in faster inference times and improved overall performance.
+
+* Training and Evaluation: We use TensorFlow to train our models on annotated data, iteratively improving their accuracy and performance through backpropagation and gradient-based optimization techniques. TensorFlow also provides tools for evaluating our models' accuracy, enabling us to fine-tune their architectures for optimal results.
+
+By combining the power of one and the oneAPI AI Analytics Toolkit (including TensorFlow), we ensure that our project benefits from optimized data preprocessing, feature engineering, and machine learning model development. This approach contributes to the accurate and efficient conversion of handwritten prescriptions into a digital format, ultimately enhancing patient safety and streamlining healthcare processes.
+
 
 
 ## How we built it <img src="static/images/built.png" alt="png" width="30">
@@ -192,6 +203,7 @@ In summary, our project has been a profound learning experience that enriched ou
 [tensorflow-url]: https://www.tensorflow.org/
 [oneapi]: https://img.shields.io/badge/Intel%20oneAPI-20232A?&logoColor=61DAFB
 [oneapi-url]: https://www.intel.com/content/www/us/en/docs/oneapi/programming-guide/2023-0/intel-oneapi-data-analytics-library-onedal.html
-[onedal]: [https://img.shields.io/badge/oneDNN-20232A?&logoColor=61DAFB](https://github.com/oneapi-src/oneDAL)
-[onedal-url]: https://www.intel.com/content/www/us/en/developer/tools/oneapi/onednn.html](https://www.intel.com/content/www/us/en/docs/oneapi/programming-guide/2023-1/intel-oneapi-data-analytics-library-onedal.html)https://www.intel.com/content/www/us/en/docs/oneapi/programming-guide/2023-1/intel-oneapi-data-analytics-library-onedal.html
-
+[onedal]: https://img.shields.io/badge/oneDNN-20232A?&logoColor=61DAFB](https://github.com/oneapi-src/oneDAL)
+[onedal-url]:https://www.intel.com/content/www/us/en/docs/oneapi/programming-guide/2023-1/intel-oneapi-data-analytics-library-onedal.html)https://www.intel.com/content/www/us/en/docs/oneapi/programming-guide/2023-1/intel-oneapi-data-analytics-library-onedal.html
+[aitoolkit]:https://pub.towardsai.net/introduction-to-intels-oneapi-ai-analytics-toolkit-8dd873925b96
+[aitoolkit-url]: https://www.intel.com/content/www/us/en/developer/tools/oneapi/ai-analytics-toolkit.html#gs.4aqjyn
