@@ -7,7 +7,7 @@
  
  
  
-This is  Team Health Heros, and we are pleased to introduce our project on Medical Prescription Handwritten Text Recognition utilizing cutting-edge technologies such as Artificial Intelligence (AI), Machine Learning (ML), Deep Learning (DL), on Intel oneAPI server using Intel oneDAL and oneDNN.👨‍💻. 
+This is  Team Health Heros, and we are pleased to introduce our project on Medical Prescription Handwritten Text Recognition utilizing cutting-edge technologies such as Artificial Intelligence (AI), Machine Learning (ML), Deep Learning (DL), on Intel oneAPI server using Intel oneDAL and Intel extension for Tensorflow.👨‍💻. 
 
 ## 📚 Project Overview
 
