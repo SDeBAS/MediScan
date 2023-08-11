@@ -49,17 +49,15 @@
 </div>
 The "MediScan" project aims to transform healthcare by accurately converting handwritten prescriptions into digital formats. Leveraging advanced OCR and Artificial Intelligence (AI), enhances patient safety by reducing errors caused by manual interpretation. Developed collaboratively on GitHub, MediScan bridges traditional prescriptions with modern digital healthcare, ensuring efficient, secure, and precise medication management. 
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
   <!-- ABOUT THE TEAM -->
 ## About The TEAM
 <div align="center">
-  <img align="right" src="https://github.com/rajput2107/rajput2107/blob/master/Assets/Developer.gif" width='200'/>
+  <img align="right" src="https://github.com/rajput2107/rajput2107/blob/master/Assets/Developer.gif" width='150'/>
 </div>
 This is  Team Health Heros, and we are pleased to introduce our project on Medical Prescription Handwritten Text Recognition utilizing cutting-edge technologies such as Artificial Intelligence (AI), Machine Learning (ML), and Deep Learning (DL), on Intel one API server using Intel oneDAL and Intel extension for Tensorflow.👨‍💻. 
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 <!-- Motivation -->
