@@ -1,136 +1,102 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-    <head>
-        <meta charset="utf-8">
-        <title>OCR</title>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        
-        <style>
-            body {
-              font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-              line-height: 2em;
-              color: #232323;
-              -webkit-font-smoothing: antialiased;
-              background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
-            }
-            #footer {
-              position: fixed;
-              left: 0;
-              bottom: 0;
-              width: 100%;
-              background-color: #616161;
-              color: white;
-              text-align: center;
-              z-index: 10;
-            }
+<html lang="en">
+<head>
 
-            .space {
-              display: block;
-              height: 30px;
-            }
-            table {
-              table-layout: fixed;
-              word-wrap: break-word;
-            }
-        </style>
-    </head>
-    <body>
+  
+  <!-- Basic Page Needs
+  ================================================== -->
+  <meta charset="utf-8">
+  <title>MEDISCAN</title>
 
-        <div class="jumbotron jumbotron-fluid">
-          <div class="container">
-            <h1 class="display-4 text-center">MEDISCAN</h1>
-            <p class="lead text-center">Transforming Healthcare with Technology</p>
-          </div>
-        </div>
+  <!-- Mobile Specific Metas
+  ================================================== -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="Bootstrap App Landing Template">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <meta name="author" content="Themefisher">
+  <meta name="generator" content="Themefisher Small Apps Template v1.0">
 
-        {% if predict1 %}
-        <div align="center">
-            <div class="uploaded-image">
-      <img id="uploadedImage" src="#" alt="Uploaded Image" />
-    </div>
-          <img src=" {{url_for('send_image', filename=image_name)}}"  class="img-fluid" width="80%">
-          <div class="container mt-3">
-          <table class="table">
-            <thead>
-              <tr>
-                <th scope="col">Model</th>
-                <th scope="col">Predict</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>WORD</th>
-                <td>{{predict1}}</td>
-              </tr>
-              <tr>
-                <td>LINE</th>
-                <td>{{predict2}}</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-        </div>
-        {% endif %}
+  <!-- Favicon -->
+  <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png" />
+  
+  <!-- PLUGINS CSS STYLE 
+  <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
+  
 
-        <!--
-        <div class="container mb-3">
-        <form id="upload-form" action="/upload_file" method="POST" enctype="multipart/form-data">
-            <div class="input-group">
-              <div class="custom-file">
-                <input type="file" class="custom-file-input" id="file-picker" name="file" accept="image/*" multiple>
-                <label class="custom-file-label" for="inputGroupFile04">Choose file</label>
-              </div>
-              
-              <div class="input-group-append">
-                <button class="btn btn-outline-secondary" type="submit" id="inputGroupFileAddon04">Upload</button>
-              </div>
-              
+  <link rel="stylesheet" href="plugins/themify-icons/themify-icons.css">
+  
+  <link rel="stylesheet" href="plugins/slick/slick.css">
 
-            </div>
-            <div class="space"></div>
-        </form>
-        </div>
-      
-        <div class="container">
-    <h1>Image Upload</h1>
-    <div class="upload-btn-wrapper">
-      <button class="btn">Upload an Image</button>
-      <input type="file" name="image" id="image" accept="image/*" />
-    </div>
+  <link rel="stylesheet" href="plugins/slick/slick-theme.css">
+
+  <link rel="stylesheet" href="plugins/fancybox/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="plugins/aos/aos.css">
+-->
+
+<link rel="stylesheet" href="{{url_for('static',filename='plugins/bootstrap/bootstrap.min.css')}}">
+<link rel="stylesheet" href="{{url_for('static',filename='plugins/themify-icons/themify-icons.css')}}">
+  <link rel="stylesheet" href="{{url_for('static',filename='plugins/slick/slick.css')}}">
+  <link rel="stylesheet" href="{{url_for('static',filename='plugins/slick/slick-theme.css')}}">
+  <link rel="stylesheet" href="{{url_for('static',filename='plugins/fancybox/jquery.fancybox.min.css')}}">
+  <link rel="stylesheet" href="{{url_for('static',filename='plugins/aos/aos.css')}}">
+
+
+
+  <!-- CUSTOM CSS -->
+  <link rel="stylesheet" href="{{url_for('static',filename='css/style.css')}}">
+
+</head>
+
+<body class="body-wrapper" data-spy="scroll" data-target=".privacy-nav">
+
+
+<section class="user-login section">
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<div class="block">
+					<!-- Image -->
+					<div class="image align-self-center"><img class="img-fluid" src="{{url_for('static',filename='images/upload.jpg')}}"
+							alt="desk-image"></div>
+					<!-- Content -->
+					<div class="content text-center">
+						<div class="logo">
+							<a href="index.html"><img src="{{url_for('static',filename='images/logo.png')}}" alt="" width="200px"></a>
+						</div>
+						<div class="title-text">
+							<h1>Upload your Prescription</h1>
+						</div>
+						<form method=post enctype="multipart/form-data" action="/upload_file">
+            <input type=file name=file class="form-control main" id="file-picker">
+            <input type=submit value=Upload class="btn btn-main-sm">
+            </form>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+  <!-- To Top -->
+  <div class="scroll-top-to">
+    <i class="ti-angle-up"></i>
   </div>
-  -->
+  
+  <!-- JAVASCRIPTS -->
+   <script src="{{url_for('static',filename='plugins/jquery/jquery.min.js')}}"></script>
+  <script src="{{url_for('static',filename='plugins/bootstrap/bootstrap.min.js')}}"></script>
+  <script src="{{url_for('static',filename='plugins/slick/slick.min.js')}}"></script>
+  <script src="{{url_for('static',filename='plugins/fancybox/jquery.fancybox.min.js')}}"></script>
+  <script src="{{url_for('static',filename='plugins/syotimer/jquery.syotimer.min.js')}}"></script>
+  <script src="{{url_for('static',filename='plugins/aos/aos.js')}}"></script>
 
-    <form method=post enctype="multipart/form-data" action="/upload_file">
-  <input type=file name=file>
-  <input type=submit value=Upload>
-</form>
+  <!-- google map -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAgeuuDfRlweIs7D6uo4wdIHVvJ0LonQ6g"></script>  
+  <script src="{{url_for('static',filename='js/script.js')}}"></script>
 
-        <footer>
-
-  <div class="text-center bg-dark py-4">
-    <small class="text-secondary">Copyright &copy; <script>document.write(new Date().getFullYear())</script>. Designed &amp; Developed by <a href="https://themefisher.com/">Health Hoes</a></small class="text-secondary">
-  </div>
-
-</footer>
-    </body>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-    <script>
-        $("#file-picker").change(function(){
-            var input = document.getElementById('file-picker');
-            for (var i=0; i<input.files.length; i++){
-            //koala.jpg, koala.JPG substring(index) lastIndexOf('a') koala.1.jpg
-                var ext= input.files[i].name.substring(input.files[i].name.lastIndexOf('.')+1).toLowerCase()
-                if ((ext == 'jpg') || (ext == 'png')){
-                    $("#msg").text("Files are supported")
-                }
-                else{
-                    $("#msg").text("Files are NOT supported")
-                    document.getElementById("file-picker").value ="";
-                }
-            }
-        } );
-    </script>
-    <script>
+  <script>
     const imageInput = document.getElementById('file-picker');
     const uploadedImage = document.getElementById('uploadedImage');
 
@@ -145,5 +111,9 @@
       }
     });
   </script>
-  
+  <script src="{{url_for('static',filename='plugins/google-map/gmap.js')}}"></script>
+
+
+</body>
+
 </html>
