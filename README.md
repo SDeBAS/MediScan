@@ -53,6 +53,7 @@ The "MediScan" project aims to transform healthcare by accurately converting han
 
   <!-- ABOUT THE TEAM -->
 ## About The TEAM
+
 <div align="center">
   <img align="right" src="https://github.com/rajput2107/rajput2107/blob/master/Assets/Developer.gif" width='150'/>
 </div>
