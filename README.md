@@ -21,7 +21,7 @@
   <summary>Table of Contents</summary>
   <ol>
     <li>
-      <a href="#about-the-project">About the Project</a>
+      <a href="#about-the-project">Project Overview</a>
       <a href="#about-the-team">About the Team</a>
       <ul>
         <li><a href="#inspiration">Motivation Behind the Project</a></li>
@@ -35,8 +35,7 @@
         <li><a href="#use-of-onednn-in-our-project">Use of oneDNN and TensorFlow in our project</a></li>
       </ul>
     </li>
-    <li><a href="#what-it-does">What it does</a></li>
-    <li><a href="#how-we-built-it">How we built it</a></li>
+    <li><a href="#what-it-does">How we built it</a></li>
     <li><a href="#what-we-learned">What we learned</a></li>
   </ol>
 </details>
@@ -111,7 +110,7 @@ The "MediScan" project holds several significant social impacts:
 This section should list any major frameworks/libraries used to bootstrap your project. Here are a few examples.
 
 * [![oneapi][oneapi]][oneapi-url]
-  * [![onednn][onednn]][onednn-url]
+  * [![onedal][onedal]][onedal-url]
 * [![python][python]][python-url]
 * [![jupyter][jupyter]][jupyter-url]
 * [![tensorflow][tensorflow]][tensorflow-url]
@@ -130,12 +129,12 @@ In our project, we leverage the power of both oneDNN (oneAPI Deep Neural Network
 We integrate oneDNN into our project to optimize the performance of our machine learning models. By utilizing oneDNN's deep learning primitives and optimization capabilities, we ensure that our models efficiently process the complex neural network computations involved in optical character recognition (OCR) and prescription transcription. This optimization contributes to faster inference times and improved resource utilization, making our solution more responsive and scalable.
 
 #TensorFlow:
-
+<img src="static/images/ss2.png" alt="png">
 TensorFlow serves as a cornerstone of our project, providing a robust and versatile framework for building and training our machine learning models. We employ TensorFlow's high-level APIs to construct and fine-tune our OCR and transcription models, allowing us to handle various data preprocessing steps, model architectures, and training strategies. TensorFlow's extensive ecosystem also aids in experimentation, visualization, and model deployment, enabling us to iterate and improve our prescription digitization system effectively.
 By combining the capabilities of oneDNN and TensorFlow, we ensure that our project achieves optimal performance and accuracy in converting handwritten prescriptions into a digital format. These technologies synergistically enhance our solution's ability to provide accurate and reliable medication information, minimizing errors, and improving patient safety in healthcare settings.
 
 
-## How we built it <img src="images/built.png" alt="png" width="30">
+## How we built it <img src="static/images/built.png" alt="png" width="30">
 These are the steps involved in making this project: 
 * Importing Libraries
 * Data Importing
@@ -155,7 +154,7 @@ These are the steps involved in making this project:
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
-## What we learned <img src="images/learn.png" alt="png" width="30">
+## What we learned
 Throughout the course of the project, we gained valuable insights and knowledge that have not only advanced our technical skills but also enriched our understanding of healthcare, technology, and collaboration. Here's what we learned:
 
 1. Healthcare Domain Expertise: We deepened our understanding of the challenges and complexities within the healthcare sector, particularly the significance of accurate medication management and patient safety.
@@ -191,10 +190,8 @@ In summary, our project has been a profound learning experience that enriched ou
 [jupyter-url]: https://jupyter.org/
 [tensorflow]: https://img.shields.io/badge/TensorFlow-f0b93a?&logoColor=white
 [tensorflow-url]: https://www.tensorflow.org/
-[streamlit]: https://img.shields.io/badge/Streamlit-f24747?&logoColor=white
-[streamlit-url]: https://streamlit.io/
 [oneapi]: https://img.shields.io/badge/Intel%20oneAPI-20232A?&logoColor=61DAFB
 [oneapi-url]: https://www.intel.com/content/www/us/en/docs/oneapi/programming-guide/2023-0/intel-oneapi-data-analytics-library-onedal.html
-[onednn]: https://img.shields.io/badge/oneDNN-20232A?&logoColor=61DAFB
-[onednn-url]: https://www.intel.com/content/www/us/en/developer/tools/oneapi/onednn.html
+[onedal]: [https://img.shields.io/badge/oneDNN-20232A?&logoColor=61DAFB](https://github.com/oneapi-src/oneDAL)
+[onedal-url]: https://www.intel.com/content/www/us/en/developer/tools/oneapi/onednn.html](https://www.intel.com/content/www/us/en/docs/oneapi/programming-guide/2023-1/intel-oneapi-data-analytics-library-onedal.html)https://www.intel.com/content/www/us/en/docs/oneapi/programming-guide/2023-1/intel-oneapi-data-analytics-library-onedal.html
 
