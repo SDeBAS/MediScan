@@ -1,4 +1,3 @@
-"""
 from __future__ import division
 import numpy as np
 import os
@@ -274,7 +273,7 @@ for i in range(len(predicted_writer)//10):
         plt.figure(figsize=(2,2))
         plt.imshow(image, cmap ='gray')
 
-"""
+
 
 import keras_ocr
 
@@ -302,8 +301,5 @@ def process_file(file_path):
 
     return result
 
-# Example usage
-if __name__ == '__main__':
-    image_path = 'path_to_your_image.jpg'  # Update with the actual image path
-    ocr_result = process_file(image_path)
-    print(ocr_result)
+model.dump("model.pkl",wb)
+
