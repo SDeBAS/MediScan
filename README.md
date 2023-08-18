@@ -12,6 +12,7 @@
     <a href="https://github.com/SDeBAS/MediScan.git"><strong>Explore the documentation</strong></a>
     <br/>
     <a href="https://drive.google.com/file/d/1oQ5JY3u107fGGAheen73WK0tgxWfVmIe/view?usp=sharing">View Demo</a>
+    
   </p>
 </div>
 
